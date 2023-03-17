@@ -1,0 +1,46 @@
+.pagination {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+    button {
+        background-color: inherit;
+        border: 1px solid #e2e2e2;
+        padding: 1rem;
+        font-weight: 700;
+        margin: 0 1rem;
+    }
+
+    button:hover {
+        background-color: #3960df;
+        transform: scale(1.1);
+        color: #fff;
+        transition: .2s ease-in-out;
+    }
+
+    div {
+        border: 1px solid #e2e2e2;
+        padding: 1rem;
+        margin: 0 .5rem;
+    }
+    .active {
+        background-color: #3960df;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .pagination {
+        justify-content: space-between;
+
+        span {
+            display: none;
+        }
+
+        div {
+            display: none;
+        }
+    }
+}
